@@ -1,5 +1,12 @@
+//Samuel Miles
+//10/24/2019
+
+//Recursive Merge-Sort: (WIP)
+
 //
+//***NOTES***
 //
+
 //Assigns Random Values 1 to 100 to Array of Length n
 function randFillArray(n) {
     var temp = [];
@@ -62,12 +69,17 @@ function mergeSort(arr) {
             console.log(out);
         }
     }
-    //return out;
 }
 
-var arr = randFillArray(10);
-var sorted = mergeSort(arr);
+//
+// Main:
+//
+var n = 5;                                  //Size of the Array
+var arr = randFillArray(n);
+
+console.log(arr);                           //Un-Sorted Array
+
+mergeSort(arr);
 //var sorted = arr.sort(function(a, b){return a - b});          //**THIS IS THE EASY WAY OUT**
 
-console.log(arr);
-//console.log(sorted);
+console.log(arr);                        //Sorted Array
