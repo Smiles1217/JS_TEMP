@@ -22,10 +22,6 @@ function randFillArray(n) {
 function binarySearch(arr, Hi, Lo, goal) {
     var Mid = Math.round((Hi - Lo) / 2);   //Find the Midpoint Interval of the Array
 
-    //console.log(Hi);        //TEMP
-    //console.log(Mid);        //TEMP
-    //console.log(Lo);        //TEMP
-
     //Adjust the Midpoint to be Accurate Relative to Hi and Lo, if Necessary
     if(Mid > Hi) {
         Mid = Hi - Mid;
@@ -34,11 +30,6 @@ function binarySearch(arr, Hi, Lo, goal) {
     if(Mid < Lo) {
         Mid = Mid + Lo;
     }
-
-    //console.log(arr);        //TEMP
-    //console.log(Hi);        //TEMP
-    //console.log(Mid);        //TEMP
-    //console.log(Lo);        //TEMP
 
     if(Hi - Mid == 0 || Mid - Lo == 0) {    //If Eiher Interval is Empty (0), then the Value was NOT Found in the Array
         return -1;
