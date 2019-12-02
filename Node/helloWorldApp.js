@@ -1,7 +1,7 @@
 //Samuel Miles
 //11/6/2019
 
-//Getting Started with Node.js (WIP):
+//Getting Started with Node.js:
 
 //
 //Basic "Hello World" Webpage implementation to help start learning Node.js
